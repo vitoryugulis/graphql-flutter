@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'dart:collection';
-import 'dart:convert';
 
 import 'package:graphql_app/graphql/wealth_summary_graphql.dart';
 import 'package:graphql_app/models/summary.dart';
@@ -15,6 +13,8 @@ class WealthSummaryBloc {
     try{
       var result = await graphql.get();
       if(result.isConcrete){
+        if(result.data == null)
+          throw new Exception("could not retrieve data");
         List<Object> data = result.data[resource];
         var summary = Summary.fromJson(data[0]);
         _wealthSummaryController.sink.add(summary);
