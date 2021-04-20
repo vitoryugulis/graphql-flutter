@@ -30,7 +30,7 @@ class _WealthSummaryPageState extends State<WealthSummaryPage> {
         child: Container(
           color: Color(0xFFE8EBF6),
           child: Container(
-            margin: EdgeInsets.only(left: 20, top: 190, right: 20, bottom: 190),
+            margin: EdgeInsets.only(left: 20, top: 188, right: 20, bottom: 188),
             height: double.infinity,
             width: double.infinity,
             decoration: BoxDecoration(
@@ -112,7 +112,7 @@ class _WealthSummaryPageState extends State<WealthSummaryPage> {
                                 ),
                               ],
                             ),
-                            Padding(padding: EdgeInsets.only(bottom: 10)),
+                            Padding(padding: EdgeInsets.only(bottom: 15)),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -126,7 +126,7 @@ class _WealthSummaryPageState extends State<WealthSummaryPage> {
                                 ),
                               ],
                             ),
-                            Padding(padding: EdgeInsets.only(bottom: 10)),
+                            Padding(padding: EdgeInsets.only(bottom: 15)),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
