@@ -9,7 +9,7 @@ class WealthSummaryGraphQL {
       var queryOptions = QueryOptions(
           document: parseString(
               r'''
-              query MyQuery {
+              query GetSummary {
                 wealthSummary {
                   id
                   profitability
