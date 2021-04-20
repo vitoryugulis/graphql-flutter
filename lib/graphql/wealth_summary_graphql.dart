@@ -1,6 +1,6 @@
 import 'package:graphql/client.dart';
-import 'package:graphql_app/main.dart';
 import 'package:gql/language.dart';
+import 'package:graphql_app/wealth_app.dart';
 
 class WealthSummaryGraphQL {
 
